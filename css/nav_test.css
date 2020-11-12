@@ -45,10 +45,31 @@
 .logo {
    
     display: inline-block;
-    font-size: 30px;
+    font-size: 2em;
     margin-top: 10px;
     margin-left: 20px;
 }
+
+
+
+
+
+
+  .logo {
+    display: inline;
+    position: relative;
+    
+    letter-spacing: -5px;
+   color:  #262223;
+  }
+  
+ .logo:after {
+    content: "HeyI'mQijie";
+    position: absolute; left: 10px; top: 5px;
+    color: rgba(0,0,0, 0.1); 
+  }
+
+
 
 .navbar-toggle {
     position: absolute;

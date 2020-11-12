@@ -18,6 +18,44 @@
     
   }
 
+  h1.heading-animation {
+    display: inline;
+    position: relative;
+    font: 200px Helvetica, Sans-Serif;
+    letter-spacing: -5px;
+   color: rgba(0,0,255,0.5); 
+  }
+  
+  h1.heading-animation:after {
+    content: "StyleGuide";
+    position: absolute; left: 10px; top: 5px;
+    color: rgba(255,0,0,0.5);   
+  }
+
+
+  .heading-animation{
+    font-size:8em;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 0.1s;
+    
+    
+  }
+  
+  @keyframes example {
+    0% {
+      
+      
+      left: 200px;
+      top: 0px;
+  }
+  
+    100% { left:0px; top:0px;}
+  }
+  
+  
+
     section {
     margin-top: 5em;
     margin-bottom: 5em;
