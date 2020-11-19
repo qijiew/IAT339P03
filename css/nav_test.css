@@ -9,10 +9,10 @@
 
 .navbar {
 
-
+  z-index:1;
     font-size: 18px;
-    background-color: white;
-
+    
+position: fixed;
     padding-bottom: 10px;
    
 }
@@ -64,16 +64,16 @@
   }
   
  .logo:after {
-    content: "HeyI'mQijie";
+    content: "QW.";
     position: absolute; left: 10px; top: 5px;
-    color: rgba(0,0,0, 0.1); 
+    color: rgba(0,0,0, 0.25); 
   }
 
 
 
 .navbar-toggle {
-    position: absolute;
-    top: 10px;
+    position: fixed;
+    top: 40px;
     right: 20px;
     cursor: pointer;
     color: black;
@@ -118,6 +118,11 @@
         
         
     }
+    
+    .main-nav li:hover {
+       
+        font-weight: bolder;
+    }
 
     .main-nav li:after {
         display:block;
@@ -127,7 +132,10 @@
         transform: scaleX(0);  
         transition: transform 250ms ease-in-out;
       }
-      .main-nav li:hover:after { transform: scaleX(1); }
+      .main-nav li:hover:after { 
+          
+        
+        transform: scaleX(1); }
 
 
     

@@ -1,0 +1,287 @@
+.about-container{
+
+    display: flex;
+    flex-direction: row;
+    max-width: 1250px;
+    margin: auto;
+   
+   
+    width:70%;
+    padding-top: 10em;
+    padding-bottom: 10em;
+    justify-content: space-evenly;
+}
+
+
+.about-container-left{
+    display:flex;
+    
+    color:#F2F2F2;
+   width:55%;
+   height:60vh;
+    background-color:#262223;
+
+    box-shadow: 35em 3em rgba(0,0,0, 0.25);
+  
+}
+
+.about-container-left h1{ 
+
+    
+    font-size:800%;
+    font-style:normal;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 0.1s;
+    
+}
+
+  
+  @keyframes example {
+    0% {
+      
+      
+      left: 200px;
+      top: 0px;
+  }
+  
+    100% { left:0px; top:0px;}
+  }
+
+
+.about-container-left h1:after {
+    display:block;
+    content: '';
+    border-bottom: solid 8px#F2F2F2;  
+    border-radius: 5px;
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+  }
+  .about-container-left h1:hover:after { transform: scaleX(1); }
+
+
+
+
+.about-container-left span{
+ display:block;
+
+}
+
+
+
+  .about-container-right{
+      display: flex;
+      flex-direction: column;
+
+    width:40%;
+
+  }
+  .about-container-right h2{
+
+
+    font-size: 3em;
+    margin-bottom: 0.5em;
+
+  }
+  .about-container-right p{
+
+    font-size:1.2em;
+    font-weight: 600;
+    text-align:justify;
+  }
+
+  .about-container-right-emplty{
+
+    height:28%;
+  }
+
+
+
+  @media only screen and (max-width: 1546px) {
+    .about-container{
+
+        display: flex;
+        flex-direction:row;
+        max-width: 1000px;
+        margin: auto;
+       
+       
+        width:100%;
+        padding-top: 10em;
+        padding-bottom: 10em;
+        justify-content: space-evenly;
+       
+    }
+
+    .about-container-left{
+        display:flex;
+        position: relative;
+        color:#F2F2F2;
+        width:55%;
+        height:60vh;
+        background-color:#262223;
+    
+        box-shadow: 28em 3em rgba(0,0,0, 0.25);
+      
+    }
+    
+    .about-container-left h1{ 
+    
+        
+        font-size:700%;
+        font-style:normal;
+        
+        
+        
+        
+    
+        
+    }
+    
+
+
+
+  }
+
+
+
+
+  @media only screen and (max-width: 1050px) {
+    .about-container{
+
+        display: flex;
+        flex-direction:column;
+       
+        margin: auto;
+       
+       
+        width:80%;
+        padding-top: 10em;
+        padding-bottom: 10em;
+        align-content:center;
+        
+       
+    }
+
+    .about-container-left{
+      
+       
+        color:#F2F2F2;
+        width:90%;
+        height:50vh;
+        background-color:#262223;
+    
+        box-shadow: 2em 23em rgba(0,0,0, 0.25);
+        align-self: start;
+      
+    }
+    
+    .about-container-left h1{ 
+    
+        
+        font-size:500%;
+        font-style:normal;
+        
+        align-self:center;
+        
+        
+    
+        
+    }
+    
+    .about-container-right{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+  
+        width:80%;
+  
+    }
+
+
+  }
+
+
+
+
+  @media only screen and (max-width: 630px) {
+    .about-container{
+
+        display: flex;
+        flex-direction:column;
+       
+        margin: auto;
+       
+       
+        width:100%;
+        padding-top: 10em;
+        padding-bottom: 10em;
+        align-content:center;
+        
+       
+    }
+
+    .about-container-left{
+      
+       
+        color:#F2F2F2;
+        width:100%;
+        height:50vh;
+        background-color:#262223;
+    
+        box-shadow:  1em 17em rgba(0,0,0, 0.25);
+        align-self: start;
+      
+    }
+    
+    .about-container-left h1{ 
+    
+        
+        font-size:350%;
+        font-style:normal;
+        align-items: center;
+        align-self:center;
+        
+        
+    
+        
+    }
+    
+    .about-container-right{
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+  
+        width:90%;
+  
+    }
+
+
+    .about-container-right{
+        display: flex;
+        flex-direction: column;
+  
+        width:75%;
+  
+    }
+    .about-container-right h2{
+  
+  
+      font-size: 1.2em;
+      margin-bottom: 0.5em;
+  
+    }
+    .about-container-right p{
+  
+      font-size:0.72em;
+      text-align:justify;
+    }
+  
+    .about-container-right-emplty{
+  
+      height:28%;
+    }
+
+
+  }
