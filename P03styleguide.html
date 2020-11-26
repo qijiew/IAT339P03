@@ -9,7 +9,7 @@
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/po1main.css" rel="stylesheet">
-  <link href="css/nav_test.css" rel="stylesheet">
+  <link href="css/nav_guide.css" rel="stylesheet">
 
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=David+Libre&display=swap" rel="stylesheet">
@@ -20,7 +20,7 @@
 
 <body>
 
-  <h1 class="heading-animation">StyleGuide</h1>
+  <h1 class="heading-animation">Style Guide</h1>
 
   <h2>HTML elements for a style guide</h2>
 
@@ -53,6 +53,8 @@
 
 
       <!-- In-text link styling section -->
+
+      
       <section>
         <h2>In-text link</h2>
 
@@ -85,56 +87,57 @@
         <h3>Rendered example:</h3>
         <header>
           <div class="nav-area">
-            <nav class="navbar" id="myTopnav">
-              <div class="navbar-toggle" id="js-navbar-toggle" onclick="openNav()">
-                <i class="fa fa-bars"></i>
-              </div>
-
-              <h1><a href="home.html" class="logo">Hey I'm Qijie</a></h1>
-              <ul class="main-nav" id="js-menu">
-                <li>
-                  <a href="#" class="nav-links">Home</a>
-                </li>
-                <li>
-                  <a href="#" class="nav-links">About</a>
-                </li>
-                <li>
-                  <a href="#" class="nav-links">Design</a>
-                </li>
-                <li>
-                  <a href="#" class="nav-links">Contact</a>
-                </li>
-
-              </ul>
-            </nav>
+              <nav class="navbar" id="myTopnav">
+                  <div class="navbar-toggle" id="js-navbar-toggle" onclick="openNav()">
+                      <i class="fa fa-bars"></i>
+                  </div>
+  
+                  <h1><a href="about.html" class="logo">QW.</a></h1>
+                  <ul class="main-nav" id="js-menu">
+  
+                      <li>
+                          <a href="about.html" class="nav-links">About</a>
+                      </li>
+                      <li>
+                          <a href="work.html" class="nav-links">Design</a>
+                      </li>
+                      <li>
+                          <a href="contact.html" class="nav-links">Contact</a>
+                      </li>
+  
+                  </ul>
+              </nav>
           </div>
-
-
+  
+  
           <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-              ×
-            </a>
-            <div class="overlay-content">
-              <a href="#">Home</a>
-              <a href="#">About</a>
-              <a href="#">Design</a>
-              <a href="#">Contact</a>
-            </div>
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                  ×
+              </a>
+              <div class="overlay-content">
+  
+                  <a href="about.html">About</a>
+                  <a href="work.html">Design</a>
+                  <a href="contact.html">Contact</a>
+              </div>
           </div>
-
+  
           <script src="nav.js"></script>
-
-        </header>
-
+  
+      </header>
+  
       </section>
 
-      <section>
-        <h2>submit/reset button</h2>
-        <h3>CSS selector:</h3>
-        <p>form</p>
-        <h3>Sample code:</h3>
 
-        <code>
+
+  <div  class="style-row"> 
+    <section class="style-row-one">
+    <h2>submit/reset button</h2>
+    <h3>CSS selector:</h3>
+    <p>form</p>
+    <h3>Sample code:</h3>
+
+    <code>
 &lt;form&gt;
 
 &lt;p&gt;
@@ -145,126 +148,129 @@
 &lt;/form&gt;
 </code>
 
-        <h3>Rendered example:</h3>
+    <h3>Rendered example:</h3>
 
 
 
-        <form>
+    <form>
 
-          <div><button class="product-button" type="button">submit</button> </div>
-          <div><button class="product-button" type="button">reset</button> </div>
-
-
-        </form>
+      <div><button class="product-button" type="button">submit</button> </div>
+      <div><button class="product-button" type="button">reset</button> </div>
 
 
-      </section>
-
-      <section>
-        <h2>Text Input Field</h2>
-        <h3>CSS selector:</h3>
-        <p> form fieldset input</p>
-        <p> .account-info </p>
+    </form>
 
 
-        <h3>Sample code:</h3>
-        <code>
- &lt;label&gt;Name&lt;input type="text" name="name"&gt;&lt;/label&gt;
+  </section>
+
+  <section class="style-row-two">
+    <h2>Text Input Field</h2>
+    <h3>CSS selector:</h3>
+    <p> form fieldset input</p>
+    <p> .account-info </p>
+
+
+    <h3>Sample code:</h3>
+    <code>
+&lt;label&gt;Name&lt;input type="text" name="name"&gt;&lt;/label&gt;
 
 </code>
 
-        <h3>Rendered example:</h3>
-        <form id="account-form">
-          <fieldset class="account-info">
-            <label>
-              Name
-              <input class="input-style" type="text" name="name">
-            </label>
-            <label>
-              Email
-              <input class="input-style" type="email" name="email">
-            </label>
-          </fieldset>
+    <h3>Rendered example:</h3>
+    <form id="account-form">
+      <fieldset class="account-info">
+        <label>
+          Name
+          <input class="input-style" type="text" name="name">
+        </label>
+        <label>
+          Email
+          <input class="input-style" type="email" name="email">
+        </label>
+      </fieldset>
 
-        </form>
+    </form>
 
-        <p> label and input css style learn from <a
-            href="https://learn.shayhowe.com/html-css/building-forms/">https://learn.shayhowe.com/html-css/building-forms/</a>
-        </p>
-      </section>
+    <p> label and input css style learn from <a
+        href="https://learn.shayhowe.com/html-css/building-forms/">learn.shayhowe</a>
+    </p>
+  </section></div>
+     
+<div class="style-row">
+  
+  <section class="style-row-one">
 
-      <section>
+  <h2>Radio button</h2>
+  <h3>CSS selector:</h3>
+  <p> input <br> label </p>
 
-        <h2>Radio button</h2>
-        <h3>CSS selector:</h3>
-        <p> input <br> label </p>
-
-        <h3>Sample code:</h3>
-        <code>
-  &lt;input type="radio" id="home" name="place" value="Home"&gt;
-  &lt;label for="home">UI design&lt;/label&gt;
-  &lt;input type="radio" id="company" name="place" value="Company"&gt;
-  &lt;label for="company">UX design&lt;/label&gt;
+  <h3>Sample code:</h3>
+  <code>
+&lt;input type="radio" id="home" name="place" value="Home"&gt;
+&lt;label for="home">UI design&lt;/label&gt;
+&lt;input type="radio" id="company" name="place" value="Company"&gt;
+&lt;label for="company">UX design&lt;/label&gt;
 </code>
 
-        <h3>Rendered example:</h3>
+  <h3>Rendered example:</h3>
 
 
-        <div>
-          <h4> Choose Design </h4>
+  <div>
+    <h4> Choose Design </h4>
 
 
-          <label class="ratio-container">UI design
-            <input type="radio" checked="checked" name="radio">
-            <span class="checkmark"></span>
-          </label>
-          <label class="ratio-container">UX design
-            <input type="radio" name="radio">
-            <span class="checkmark"></span>
-          </label>
+    <label class="ratio-container">UI design
+      <input type="radio" checked="checked" name="radio">
+      <span class="checkmark"></span>
+    </label>
+    <label class="ratio-container">UX design
+      <input type="radio" name="radio">
+      <span class="checkmark"></span>
+    </label>
 
-        </div>
+  </div>
 
-        <p>Ratio effect learn from <a href="https://www.w3schools.com/howto/howto_css_custom_checkbox.asp">
-            https://www.w3schools.com/howto/howto_css_custom_checkbox.asp</a> </p>
+  <p>Ratio effect learn from <a href="https://www.w3schools.com/howto/howto_css_custom_checkbox.asp">
+    w3schools</a> </p>
 
 
-      </section>
+</section>
 
-      <section>
-        <h2>An image as link</h2>
-        <h3>CSS selector:</h3>
-        <p>.image</p>
+<section class="style-row-two">
+  <h2>An image as link</h2>
+  <h3>CSS selector:</h3>
+  <p>.image</p>
 
-        <h3>Sample code:</h3>
-        <code>
-  &lt;a class="image" href="https://temza.co.uk/"&gt;
-    &lt;img alt="interior design" src="image/ui1.jpg" &gt;
- &lt;/a&gt;
+  <h3>Sample code:</h3>
+  <code>
+&lt;a class="image" href="https://temza.co.uk/"&gt;
+&lt;img alt="interior design" src="image/ui1.jpg" &gt;
+&lt;/a&gt;
 </code>
-        <h3>Rendered example:</h3>
+  <h3>Rendered example:</h3>
 
-        <div class="image-container">
-
-
-          <div class="container">
-            <a href="https://temza.co.uk/">
-              <img class="image" alt="interior design" src="image/ui1.jpg">
-            </a>
-            <div class="middle">
-              <div class="text">To see the detail</div>
-            </div>
-          </div>
-        </div>
-        <p> Image copy from <a href="https://temza.co.uk/">here</a></p>
-        <p> Hover effect learn from <a
-            href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade">
-            https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade</a> </p>
+  <div class="image-container">
 
 
-      </section>
+    <div class="container">
+      <a href="https://temza.co.uk/">
+        <img class="image" alt="interior design" src="image/ui1.jpg">
+      </a>
+      <div class="middle">
+        <div class="text">To see the detail</div>
+      </div>
+    </div>
+  </div>
+  <p> Image copy from <a href="https://temza.co.uk/">here</a></p>
+  <p> Hover effect learn from <a
+      href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade">
+      w3schools</a> </p>
 
-    </section>
+
+</section>
+
+</section></div>
+      
 
 
     <!-- // INTERACTIVE ELEMENTS SECTION -->
@@ -274,72 +280,83 @@
     <!-- TEXT ELEMENTS SECTION // -->
     <section id="text_elements">
 
-      <section>
+    <div class="style-row">
+
+   
+
+        <section class="style-row-a">
+  
+  
+          <h2>Headings</h2>
+          <h3>CSS selector:</h3>
+          <p> h2 <br> h3 <br> h4 <br> h5 </p>
+          <h3>Sample code:</h3>
+          <code>
+            &lt;h2&gt;HOME&lt;/h2&gt;
+                &lt;h3&gt;ABOUT&lt;/h3&gt;
+                    &lt;h4&gt;Design&lt;/h4&gt;
+                      &lt;h5&gt;CONTACT&lt;/h5&gt;
+                    </code>
+          <h3>Rendered example:</h3>
+          <h2>HOME</h2>
+          <h3>About</h3>
+          <h4>Design</h4>
+          <h5>Contact</h5>
+  
+  
+        </section>
+  
+        <section class="style-row-b">
+          <h2>Paragraphs</h2>
+          <h3>Sample code:</h3>
+          <code>
+          &lt;p&gtMy name is Qijie Wang and I'm a User Experience Designer in Vancouver. With a background in Interactive design and website development, 
+          I've always been a visual storyteller driven by a need to understand and influence my audience. I believe that technology can revolutionize how people learn,
+           communicate, and create and I’m passionate about shaping products and services that help people focus on what they do best: be human.&lt;/p&gt;
+          </code>
+          <h3>Rendered example:</h3>
+  
+          <h3>BIO</h3>
+          <p id="para-service"> My name is Qijie Wang and I'm a User Experience Designer in Vancouver. With a background
+            in Interactive design and website development,
+            I've always been a visual storyteller driven by a need to understand and influence my audience. I believe that
+            technology can revolutionize how people learn, communicate,
+            and create and I’m passionate about shaping products and services that help people focus on what they do best:
+            be human.</p>
+        </section>
+  
+  
+  
+        <section class="style-row-c">
+          <h2>Numbered Lists</h2>
+          <h3>CSS selector:</h3>
+          <p> ol </p>
+          <h3>Sample code:</h3>
+          <code>
+            &lt;ol&gt;
+                &lt;li&gt; New Build&lt;/li&gt;
+                &lt;li&gt; Remodel&lt;/li&gt;
+                  &lt;li&gt; Decoration&lt;/li&gt;
+                      &lt;/ol&gt;
+      </code>
+  
+          <h3>Rendered example:</h3>
+          <ol>
+            <li> New Build</li>
+            <li> Remodel</li>
+            <li> Decoration </li>
+          </ol>
+  
+        </section>
+  
+     
 
 
-        <h2>Headings</h2>
-        <h3>CSS selector:</h3>
-        <p> h2 <br> h3 <br> h4 <br> h5 </p>
-        <h3>Sample code:</h3>
-        <code>
-          &lt;h2&gt;HOME&lt;/h2&gt;
-              &lt;h3&gt;ABOUT&lt;/h3&gt;
-                  &lt;h4&gt;Design&lt;/h4&gt;
-                    &lt;h5&gt;CONTACT&lt;/h5&gt;
-                  </code>
-        <h3>Rendered example:</h3>
-        <h2>HOME</h2>
-        <h3>About</h3>
-        <h4>Design</h4>
-        <h5>Contact</h5>
 
+    </div>
 
-      </section>
-
-      <section>
-        <h2>Paragraphs</h2>
-        <h3>Sample code:</h3>
-        <code>
-        &lt;p&gtMy name is Qijie Wang and I'm a User Experience Designer in Vancouver. With a background in Interactive design and website development, 
-        I've always been a visual storyteller driven by a need to understand and influence my audience. I believe that technology can revolutionize how people learn,
-         communicate, and create and I’m passionate about shaping products and services that help people focus on what they do best: be human.&lt;/p&gt;
-        </code>
-        <h3>Rendered example:</h3>
-
-        <h3>BIO</h3>
-        <p id="para-service"> My name is Qijie Wang and I'm a User Experience Designer in Vancouver. With a background
-          in Interactive design and website development,
-          I've always been a visual storyteller driven by a need to understand and influence my audience. I believe that
-          technology can revolutionize how people learn, communicate,
-          and create and I’m passionate about shaping products and services that help people focus on what they do best:
-          be human.</p>
-      </section>
-
-
-
-      <section>
-        <h2>Numbered Lists</h2>
-        <h3>CSS selector:</h3>
-        <p> ol </p>
-        <h3>Sample code:</h3>
-        <code>
-          &lt;ol&gt;
-              &lt;li&gt; New Build&lt;/li&gt;
-              &lt;li&gt; Remodel&lt;/li&gt;
-                &lt;li&gt; Decoration&lt;/li&gt;
-                    &lt;/ol&gt;
-    </code>
-
-        <h3>Rendered example:</h3>
-        <ol>
-          <li> New Build</li>
-          <li> Remodel</li>
-          <li> Decoration </li>
-        </ol>
-
-      </section>
-
-    </section>
+  </section>
+    
     <!-- // TEXT ELEMENTS SECTION -->
 
 
@@ -349,46 +366,44 @@
 
       <header>
         <div class="nav-area">
-          <nav class="navbar" id="myTopnav">
-            <div class="navbar-toggle" id="js-navbar-toggle" onclick="openNav()">
-              <i class="fa fa-bars"></i>
-            </div>
+            <nav class="navbar" id="myTopnav">
+                <div class="navbar-toggle" id="js-navbar-toggle" onclick="openNav()">
+                    <i class="fa fa-bars"></i>
+                </div>
 
-            <h1><a href="home.html" class="logo">Hey I'm Qijie</a></h1>
-            <ul class="main-nav" id="js-menu">
-              <li>
-                <a href="#" class="nav-links">Home</a>
-              </li>
-              <li>
-                <a href="#" class="nav-links">About</a>
-              </li>
-              <li>
-                <a href="#" class="nav-links">Design</a>
-              </li>
-              <li>
-                <a href="#" class="nav-links">Contact</a>
-              </li>
+                <h1><a href="about.html" class="logo">QW.</a></h1>
+                <ul class="main-nav" id="js-menu">
 
-            </ul>
-          </nav>
+                    <li>
+                        <a href="about.html" class="nav-links">About</a>
+                    </li>
+                    <li>
+                        <a href="work.html" class="nav-links">Design</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="nav-links">Contact</a>
+                    </li>
+
+                </ul>
+            </nav>
         </div>
 
 
         <div id="myNav" class="overlay">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-            ×
-          </a>
-          <div class="overlay-content">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Design</a>
-            <a href="#">Contact</a>
-          </div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                ×
+            </a>
+            <div class="overlay-content">
+
+                <a href="about.html">About</a>
+                <a href="work.html">Design</a>
+                <a href="contact.html">Contact</a>
+            </div>
         </div>
 
         <script src="nav.js"></script>
 
-      </header>
+    </header>
 
 
 

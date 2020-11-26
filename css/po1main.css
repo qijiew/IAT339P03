@@ -25,16 +25,12 @@
   h1.heading-animation {
     display: inline;
     position: relative;
-    font: 200px Helvetica, Sans-Serif;
+    font: 3em Helvetica, Sans-Serif;
     letter-spacing: -5px;
    color: rgba(0,0,255,0.5); 
   }
   
-  h1.heading-animation:after {
-    content: "StyleGuide";
-    position: absolute; left: 10px; top: 5px;
-    color: rgba(255,0,0,0.5);   
-  }
+
 
 
   .heading-animation{
@@ -67,6 +63,7 @@
     display:block;
     display:flex;
     flex-direction:column;
+    
 
     }
     #main-menu{
@@ -77,7 +74,7 @@
 
       display:inline-block;
       color: #000;
-      background-color: white;
+      background-color: #EDEDED;
       text-decoration: none;
       border-bottom: transparent solid 1px;
       padding-bottom: 5px;
@@ -90,7 +87,7 @@
 
     #main-menu a:hover {
       color: #000;
-      background-color:white;
+      background-color: #EDEDED;;
       border-bottom: #737272 solid 3px;
       font-weight:bold;
       transition: .3s ease;
@@ -106,7 +103,7 @@
     #menu a {
     display:inline-block;
     color: #000;
-    background-color: white;
+    background-color: #EDEDED;
     text-decoration: none;
     border-bottom: transparent solid 1px;
     padding-bottom: 5px;
@@ -117,13 +114,70 @@
 
     #menu a:hover {
     color: #000;
-    background-color:white;
+    background-color: #EDEDED;
     border-bottom: #737272 solid 3px;
     font-weight:bold;
     transition: .3s ease;
     }
 
 /* interactive elements */
+
+
+
+.style-row{
+display:flex;
+flex-direction: row;
+width:100%;
+justify-content: space-evenly;
+
+}
+
+.style-row-one{
+
+width:50%;
+}
+
+
+.style-row-two{
+
+  width:50%;
+}
+
+.style-row-a{width:33.3%;}
+.style-row-b{  width:33.3%;}
+.style-row-b{  width:33.3%;}
+
+
+@media only screen and (max-width: 630px) {
+
+
+  .style-row{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    justify-content: space-evenly;
+   
+    align-content: flex-start;
+    
+    }
+    
+    .style-row-one{
+    
+    width:100;
+    }
+    
+    
+    .style-row-two{
+    
+      width:100;
+    }
+
+    .style-row-a{width:100%;}
+    .style-row-b{  width:100%;}
+    .style-row-b{  width:100%;}
+
+
+}
 
 a.intext-link:hover{
    background-color: #D9D9D9;
@@ -141,14 +195,14 @@ a.intext-link:focus{
 
 #nav-bar{
 
-background-color: white ;
+background-color: #EDEDED ;
 
 
 }
 
 #nav-bar a {
 color: #000;
-background-color: white;
+background-color:#EDEDED;
 text-decoration: none;
 border-bottom: transparent solid 2.5px;
 padding-bottom: 5px;
@@ -160,7 +214,7 @@ margin-right: 8px;
 
 #nav-bar a:hover {
 color: #000;
-background-color:white;
+background-color:#EDEDED;
 font-weight:bold;
 border-bottom: #737272 solid 2.5px;
 transition: .8s ease;
@@ -295,7 +349,7 @@ font-weight: bold;
 
 #para-service {
 
-  width:30%;
+  width:90%;
   text-align:justify;
 
 }
