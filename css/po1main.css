@@ -6,9 +6,9 @@
 
     body {
       font-family:'Open Sans', sans-serif;
-      padding: 2rem;
+      padding: 1.5rem;
       background-color: #EDEDED;
-      border: 1em solid white;
+     
       
     }
 
@@ -163,13 +163,13 @@ width:50%;
     
     .style-row-one{
     
-    width:100;
+    width:100%;
     }
     
     
     .style-row-two{
     
-      width:100;
+      width:100%;
     }
 
     .style-row-a{width:100%;}
@@ -703,18 +703,38 @@ font-size:20px;
 }
 
 
-@media screen and (max-width: 32em) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
+
+
+/*Reference page css*/
+.reference{
+	
+	padding-top: 10em;
+}
+.reference> h1{
+  padding-bottom: 1.5em;
+	text-align: center;
+
 }
 
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
+.reference h3{
+  padding-top:3em;
+}
+
+.reference p{
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+.links{
+	padding: 1em;
+	text-align: center;
+	width: 50vw;
+	margin: auto;
+}
+
+.reference a{
+ 	color:  #737272;
+}
+
+.reference a:hover{
+  color:  #262223;
 }

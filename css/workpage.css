@@ -1,8 +1,3 @@
-.design-process-image2 {
-  background-color: #B8CADE;
-  border: 3px solid #B8CADE;
-}
-
 .design-process {
   display: flex;
   flex-direction: row;
@@ -163,7 +158,7 @@ h1.work-title {
 
   .design-process1 .design-process-image1 {
     width: 100%;
-    height: 50%;
+    height: 50vh;
     margin: auto;
     padding-top: 1em;
     padding-bottom: 1em;
